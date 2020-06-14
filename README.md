@@ -1,7 +1,7 @@
 # Same-Home-Different-Hacks
 Entry for same home different hacks online hackathon.
 
-It's a pomodoro technique timer! Focus on your work for 25 minutes, then take a 5 minute break. after 4 work periods, take a longer, 15 minute break.
+It's a pomodoro technique timer! Focus on your work for 25 minutes, then take a 5 minute break. after 4 work periods, take a longer, 15 minute break. As a student currently studying university courses from home, staying focused it VERY challenging! This timer can be a great asset for any student or professional needing help staying focused at home.
 
 The app was made with Qt and C++. To use the app yourself you will need to build the source. More info on how to do this can be found on the Qt website: https://www.qt.io/
 
