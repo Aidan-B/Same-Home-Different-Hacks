@@ -22,7 +22,6 @@ private slots:
 private:
     QPushButton *startButton;
     QPushButton *resetButton;
-    QPushButton *pinButton;
     QProgressBar *progressBar;
     QLabel *status;
     QTimer *timer;
