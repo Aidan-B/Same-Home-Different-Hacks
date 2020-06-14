@@ -19,10 +19,10 @@ private slots:
     void slotStartButtonHanlder(bool checked);
     void slotResetButtonHanlder();
 
-
 private:
     QPushButton *startButton;
     QPushButton *resetButton;
+    QPushButton *pinButton;
     QProgressBar *progressBar;
     QLabel *status;
     QTimer *timer;
@@ -42,3 +42,4 @@ private:
     const int FOCUS_LENGTH = 1500; //25 minutes
 };
 #endif // MAINWINDOW_H
+//“Sound effects obtained from https://www.zapsplat.com“

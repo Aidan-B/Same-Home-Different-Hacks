@@ -8,6 +8,9 @@
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
     /* Set up UI */
+    Qt::WindowFlags flags = windowFlags();
+    flags |= Qt::WindowStaysOnTopHint;
+    setWindowFlags(flags);
     setFixedSize(250,100);
     int padding = 5;
     startButton = new QPushButton("Start", this);
@@ -21,12 +24,14 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
                 this->width() - (startButton->width() + resetButton->width() + 2*padding),
                 this->height() - (resetButton->height() + padding)
                 );
+
     progressBar = new QProgressBar(this);
     progressBar->setGeometry(padding, 20 + padding, this->width() - 2*padding, 15);
 
     status = new QLabel("Paused", this);
     status->setText("Press start to begin");
     status->setGeometry(padding, padding, this->width()-2*padding, 20);
+
 
     /* Set up timers and connect slots */
     timer = new QTimer(this);
